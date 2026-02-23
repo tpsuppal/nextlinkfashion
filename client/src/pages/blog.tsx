@@ -3,6 +3,22 @@ import { Link } from "wouter";
 export default function Blog() {
   const posts = [
     {
+      id: 6,
+      title: "AI in Fashion: From Predictive Analytics to Automated QC",
+      excerpt: "How Nextlink Fashion is integrating artificial intelligence into our production lines to enhance quality assurance and predict trending styles before they peak.",
+      date: "Feb 20, 2025",
+      category: "Innovation",
+      readTime: "8 min read"
+    },
+    {
+      id: 5,
+      title: "Navigating the 2025 Global Trade Landscape in Apparel",
+      excerpt: "An analysis of the new trade agreements and what they mean for cross-border garment manufacturing, tariffs, and supply chain timelines.",
+      date: "Jan 15, 2025",
+      category: "Logistics",
+      readTime: "6 min read"
+    },
+    {
       id: 1,
       title: "The Future of Sustainable Fabrics in 2025",
       excerpt: "Explore how organic cotton, recycled fibers, and innovative new materials are reshaping the apparel manufacturing landscape and lowering environmental impact.",
