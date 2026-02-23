@@ -11,9 +11,9 @@ export default function About() {
       <section className="bg-primary/5 py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Nextlink Fashion</span>
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">A Legacy Built on Trust and Precision</h1>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">Built on Trust. Delivered with Precision.</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            With over 15 years of unwavering commitment to excellence, Next Link Fashion stands as a world-class leader in apparel manufacturing and supply.
+            For 15+ years, we’ve helped fashion retailers bring collections to market—design, production, quality control, and delivery through a multi-country manufacturing footprint.
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function About() {
             <div className="order-1 lg:order-2">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-8">Our Integrated Team & Expertise</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Our strength lies in our highly skilled and collaborative team, dedicated to ensuring seamless operations and client satisfaction at every touchpoint.
+                A cross-functional team built to reduce sampling cycles, protect quality, and keep production on schedule—end to end.
               </p>
               
               <ul className="space-y-6">
@@ -74,15 +74,15 @@ export default function About() {
             <div>
               <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Quality Control & Assurance</h2>
               <p className="text-lg text-primary-foreground/90 mb-8">
-                Quality is the bedrock of Nextlink Fashion. Our robust Quality Management System (QMS) is meticulously implemented across the entire supply chain, ensuring unparalleled product integrity.
+                Quality is the bedrock of Nextlink Fashion. Our robust Quality Management System (QMS) is meticulously implemented across the entire supply chain, ensuring consistent quality across bulk production.
               </p>
               
               <div className="space-y-4">
                 {[
                   "Pre-Production Checks: Rigorous inspection of raw materials, patterns, and samples.",
                   "In-Line Inspections: Continuous monitoring of manufacturing processes.",
-                  "Mid-Production Audits: Comprehensive assessments at key stages.",
-                  "Final Random Inspection (FRI): Thorough inspection of finished goods.",
+                  "Mid-Production Audits: Comprehensive assessments including shade band control at key stages.",
+                  "Final Random Inspection (FRI): Thorough AQL inspection of finished goods.",
                   "Accredited Lab Testing: Partnership with international testing labs."
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
