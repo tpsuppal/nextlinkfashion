@@ -1,6 +1,6 @@
 import ladiesImg from "@assets/Photo_Ladieswear_1771833430339.avif";
 import mensImg from "@assets/Photo_Menswear_1771833496404.jpg";
-import childrensImg from "@/assets/images/childrens-garments.jpg";
+import childrensImg from "@assets/Photo-kidswear_1771833660630.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
