@@ -121,21 +121,21 @@ export default function About() {
             
             <div className="order-1 lg:order-2">
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
+                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 h-full">
                   <h4 className="font-serif text-xl font-bold mb-2">Ethical Sourcing</h4>
                   <p className="text-sm text-secondary-foreground/80">Partnering exclusively with suppliers who uphold fair labor practices and safe working conditions.</p>
                 </li>
-                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
+                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 h-full">
                   <h4 className="font-serif text-xl font-bold mb-2">Eco-Friendly Production</h4>
                   <p className="text-sm text-secondary-foreground/80">Implementing processes that minimize our environmental footprint, including water conservation.</p>
                 </li>
-                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
+                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 h-full">
                   <h4 className="font-serif text-xl font-bold mb-2">Sustainable Materials</h4>
                   <p className="text-sm text-secondary-foreground/80">Actively promoting organic cotton, recycled fibers, and innovative eco-conscious materials.</p>
                 </li>
-                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
+                <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 h-full">
                   <h4 className="font-serif text-xl font-bold mb-2">Certifications</h4>
-                  <p className="text-sm text-secondary-foreground/80">Our facilities are audited and certified against the industry's most rigorous standards — including GOTS, OEKO-TEX Standard 100, BSCI, Sedex, WRAP, ISO 14001, and more — ensuring every order meets the compliance requirements of global retail buyers.</p>
+                  <p className="text-sm text-secondary-foreground/80">Our facilities are audited and certified against the industry's most rigorous standards — ensuring every order meets the compliance requirements.</p>
                 </li>
               </ul>
             </div>
