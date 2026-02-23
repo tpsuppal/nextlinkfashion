@@ -10,8 +10,10 @@ export default function About() {
       {/* Page Header */}
       <section className="bg-primary/5 py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
-          <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Nextlink Fashion</span>
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">Built on Trust. Delivered with Precision.</h1>
+          <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Next Link Fashion</span>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
+            Built on Trust.<br />Delivered with Precision.
+          </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             For 15+ years, we’ve helped fashion retailers bring collections to market—design, production, quality control, and delivery through a multi-country manufacturing footprint.
           </p>
