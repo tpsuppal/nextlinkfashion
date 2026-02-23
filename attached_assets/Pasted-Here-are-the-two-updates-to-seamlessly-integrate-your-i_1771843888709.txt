@@ -1,0 +1,27 @@
+Here are the two updates to seamlessly integrate your impressive compliance portfolio across your site.
+
+1. Short Blurb for the Homepage
+Place this section somewhere prominent on the homepage (e.g., just below your main services) to instantly build trust before they even click to the About page.
+
+Headline: Globally Certified. Ethically Manufactured.
+Body: We operate to the fashion industry's highest standards for sustainability, social compliance, and supply chain security. From GOTS-certified organic materials to C-TPAT-approved facilities, our multi-country manufacturing network ensures your garments are produced responsibly and clear customs without delay.
+Visual: Display just a single row of your 5 most recognized logos here (e.g., GOTS, OEKO-TEX, BSCI, WRAP, C-TPAT).
+CTA Button: View All Certifications (links to the About page)
+
+2. Updated "Quality Control & Assurance" Section (About Page)
+In your current About page screenshot, the Quality Control text is good, but adding your actual quality certifications makes it undeniably concrete. Here is the revised version for your developer:
+
+Headline: Quality Control & Assurance
+Body: Quality is the bedrock of Nextlink Fashion. Backed by GMP (Good Manufacturing Practice) and ISO 14001 certifications, our robust Quality Management System (QMS) is meticulously implemented across our multi-country facilities to ensure consistent, retail-ready garments.
+
+Pre-Production Checks: Rigorous inspection of raw materials, patterns, and samples before bulk production begins.
+
+In-Line Inspections: Continuous monitoring of manufacturing processes to catch and correct variations instantly.
+
+Mid-Production Audits: Comprehensive assessments at key stages to protect both product integrity and production timelines.
+
+Final Random Inspection (FRI): Thorough AQL-standard inspections of finished goods prior to shipping.
+
+Accredited Lab Testing: Partnerships with international testing labs to ensure full compliance with global safety standards, including OEKO-TEX® Standard 100.
+
+By replacing vague phrases like "unparalleled product integrity" with concrete terms like "AQL-standard inspections" and your actual certifications, retail buyers will immediately recognize that you speak their operational language.

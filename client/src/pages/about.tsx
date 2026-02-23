@@ -77,22 +77,22 @@ export default function About() {
           <div className="mb-16 w-full">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Quality Control & Assurance</h2>
             <p className="text-lg text-primary-foreground/90 text-justify">
-              Quality is the bedrock of Nextlink Fashion. Our robust Quality Management System (QMS) is meticulously implemented across the entire supply chain, ensuring consistent quality across bulk production.
+              Quality is the bedrock of Nextlink Fashion. Backed by GMP (Good Manufacturing Practice) and ISO 14001 certifications, our robust Quality Management System (QMS) is meticulously implemented across our multi-country facilities to ensure consistent, retail-ready garments.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
-                  "Pre-Production Checks: Rigorous inspection of raw materials, patterns, and samples.",
-                  "In-Line Inspections: Continuous monitoring of manufacturing processes.",
-                  "Mid-Production Audits: Comprehensive assessments including shade band control at key stages.",
-                  "Final Random Inspection (FRI): Thorough AQL inspection of finished goods.",
-                  "Accredited Lab Testing: Partnership with international testing labs."
+                  { title: "Pre-Production Checks:", desc: "Rigorous inspection of raw materials, patterns, and samples before bulk production begins." },
+                  { title: "In-Line Inspections:", desc: "Continuous monitoring of manufacturing processes to catch and correct variations instantly." },
+                  { title: "Mid-Production Audits:", desc: "Comprehensive assessments at key stages to protect both product integrity and production timelines." },
+                  { title: "Final Random Inspection (FRI):", desc: "Thorough AQL-standard inspections of finished goods prior to shipping." },
+                  { title: "Accredited Lab Testing:", desc: "Partnerships with international testing labs to ensure full compliance with global safety standards, including OEKO-TEX® Standard 100." }
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-accent mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <p className="text-primary-foreground/90">{item}</p>
+                    <p className="text-primary-foreground/90 leading-relaxed"><strong className="text-white">{item.title}</strong> {item.desc}</p>
                   </div>
                 ))}
               </div>
