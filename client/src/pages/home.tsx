@@ -23,10 +23,10 @@ export default function Home() {
             Global Apparel Solutions
           </span>
           <h1 className="mb-6 font-serif text-5xl md:text-7xl font-bold text-white tracking-tight animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 max-w-4xl text-balance">
-            Your Premier Apparel Manufacturing Partner
+            Your Trusted Apparel Manufacturing Partner
           </h1>
           <p className="mb-10 max-w-2xl text-lg md:text-xl text-white/90 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-            With over 15 years of excellence, Nextlink Fashion delivers world-class design-to-delivery capabilities for retailers worldwide.
+            Seamless design-to-delivery, anchored by multi-country manufacturing facilities and 15+ years of proven expertise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300">
             <Link href="/contact">
