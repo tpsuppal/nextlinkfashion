@@ -57,7 +57,7 @@ export default function Blog() {
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-black/5">
                       <span className="text-sm font-medium text-foreground">{post.readTime}</span>
                       <Link href="#" className="text-primary font-semibold hover:text-accent transition-colors flex items-center gap-1">
-                        Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLineJoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                       </Link>
                     </div>
                   </div>
