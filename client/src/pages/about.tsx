@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import teamImg from "@/assets/images/team-office.jpg";
 import qcImg from "@/assets/images/quality-control.jpg";
 import sustainImg from "@/assets/images/sustainability.jpg";
+import certsImg from "@assets/image_1771842294019.png";
 
 export default function About() {
   return (
@@ -131,9 +132,56 @@ export default function About() {
                 </li>
                 <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
                   <h4 className="font-serif text-xl font-bold mb-2">Certifications</h4>
-                  <p className="text-sm text-secondary-foreground/80">Adhering to international sustainability standards and relevant certifications.</p>
+                  <p className="text-sm text-secondary-foreground/80">Our facilities are audited and certified against the industry's most rigorous standards — including GOTS, OEKO-TEX Standard 100, BSCI, Sedex, WRAP, ISO 14001, and more — ensuring every order meets the compliance requirements of global retail buyers.</p>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Compliance & Certifications Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Uncompromising Standards & Global Compliance</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              We operate to the highest international standards for quality, ethical labor, and environmental sustainability. Our multi-country facilities are rigorously audited, ensuring your supply chain is secure, responsible, and ready for the world’s most demanding retail floors.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Column 1 */}
+            <div className="flex flex-col space-y-6">
+              <div className="mb-4 border-b border-black/10 pb-4">
+                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Sustainable & Material Integrity</h3>
+                <p className="text-sm text-muted-foreground">Certified sourcing for organic, recycled, and eco-conscious apparel production.</p>
+              </div>
+              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
+                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="flex flex-col space-y-6">
+              <div className="mb-4 border-b border-black/10 pb-4">
+                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Ethical Labor & Social Compliance</h3>
+                <p className="text-sm text-muted-foreground">Strictly audited for fair wages, safe working environments, and responsible operations.</p>
+              </div>
+              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
+                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col space-y-6">
+              <div className="mb-4 border-b border-black/10 pb-4">
+                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Quality, Security & Infrastructure</h3>
+                <p className="text-sm text-muted-foreground">Rigorous quality management and globally recognized supply chain security for frictionless importing.</p>
+              </div>
+              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
+                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
+              </div>
             </div>
           </div>
         </div>
