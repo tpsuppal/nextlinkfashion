@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoImg from "@assets/NLFL_Logo_-_Gold_1771819902609.jpeg";
 
 export default function Footer() {
   return (
@@ -6,13 +7,8 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
-            <Link href="/" className="mb-6 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded bg-accent text-accent-foreground">
-                <span className="font-serif text-2xl font-bold tracking-tighter">N</span>
-              </div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                Nextlink
-              </span>
+            <Link href="/" className="mb-6 inline-flex bg-white p-2 rounded-lg items-center justify-center">
+              <img src={logoImg} alt="Nextlink Fashion" className="h-12 w-auto object-contain" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/80 leading-relaxed">
               Headquartered in Hong Kong, Nextlink Fashion Inc Limited is a world-class leader in apparel manufacturing and global supply chain solutions with over 15 years of excellence.
