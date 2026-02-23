@@ -13,7 +13,7 @@ export default function About() {
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Nextlink Fashion</span>
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">A Legacy Built on Trust and Precision</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            With over 15 years of unwavering commitment to excellence, Nextlink Fashion Inc Limited stands as a world-class leader in apparel manufacturing and supply.
+            With over 15 years of unwavering commitment to excellence, Next Link Fashion stands as a world-class leader in apparel manufacturing and supply.
           </p>
         </div>
       </section>

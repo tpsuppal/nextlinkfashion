@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/80 leading-relaxed">
-              Headquartered in Hong Kong, Nextlink Fashion Inc Limited is a world-class leader in apparel manufacturing and global supply chain solutions with over 15 years of excellence.
+              Headquartered in Hong Kong, Next Link Fashion is a world-class leader in apparel manufacturing and global supply chain solutions with over 15 years of excellence.
             </p>
           </div>
           
@@ -56,7 +56,7 @@ export default function Footer() {
         
         <div className="mt-16 border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-primary-foreground/60">
-            &copy; {new Date().getFullYear()} Nextlink Fashion Inc Limited. All rights reserved.
+            &copy; {new Date().getFullYear()} Next Link Fashion. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs text-primary-foreground/60">
             <span className="hover:text-white cursor-pointer">Privacy Policy</span>
