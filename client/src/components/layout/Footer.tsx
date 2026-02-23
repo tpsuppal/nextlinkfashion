@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import logoImg from "@assets/NLFL_Logo_-_Gold_1771819902609.jpeg";
+import logoImg from "@assets/NLFL_Logo-_Gold_1771820062366.png";
 
 export default function Footer() {
   return (
