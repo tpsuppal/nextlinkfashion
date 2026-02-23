@@ -54,7 +54,7 @@ export default function Blog() {
 
   return (
     <div className="flex flex-col w-full pb-24">
-      <section className="bg-primary/5 py-20 px-4 text-center">
+      <section className="bg-accent/10 py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">Industry Insights</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">

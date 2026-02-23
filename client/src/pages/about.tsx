@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="flex flex-col w-full pb-20">
       {/* Page Header */}
-      <section className="bg-primary/5 py-20 px-4 text-center">
+      <section className="bg-accent/10 py-20 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Next Link Fashion</span>
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
