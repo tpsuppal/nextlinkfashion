@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <img src={logoImg} alt="Nextlink Fashion" className="h-14 w-auto object-contain" />
-          <span className="font-serif text-2xl font-bold tracking-tight text-accent">
+          <span className="font-serif text-2xl font-bold tracking-tight text-[#D4AF37]">
             Next Link Fashion
           </span>
         </Link>

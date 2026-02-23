@@ -11,7 +11,7 @@ export default function Footer() {
               <div className="inline-flex items-center justify-center">
                 <img src={logoImg} alt="Nextlink Fashion" className="h-16 w-16 object-contain" />
               </div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-accent">
+              <span className="font-serif text-2xl font-bold tracking-tight text-[#D4AF37]">
                 Next Link Fashion
               </span>
             </Link>
