@@ -143,45 +143,47 @@ export default function About() {
       {/* Compliance & Certifications Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Uncompromising Standards & Global Compliance</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We operate to the highest international standards for quality, ethical labor, and environmental sustainability. Our multi-country facilities are rigorously audited, ensuring your supply chain is secure, responsible, and ready for the world’s most demanding retail floors.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Column 1 */}
-            <div className="flex flex-col space-y-6">
-              <div className="mb-4 border-b border-black/10 pb-4">
-                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Sustainable & Material Integrity</h3>
-                <p className="text-sm text-muted-foreground">Certified sourcing for organic, recycled, and eco-conscious apparel production.</p>
-              </div>
-              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
-                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <div className="absolute -inset-4 bg-accent/10 rounded-2xl transform rotate-2"></div>
+              <img src={certsImg} alt="Certifications" className="relative z-10 rounded-xl shadow-xl w-full object-cover aspect-video bg-white/50 backdrop-blur-sm p-4 grayscale hover:grayscale-0 transition-all duration-500 border border-black/5" />
             </div>
-
-            {/* Column 2 */}
-            <div className="flex flex-col space-y-6">
-              <div className="mb-4 border-b border-black/10 pb-4">
-                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Ethical Labor & Social Compliance</h3>
-                <p className="text-sm text-muted-foreground">Strictly audited for fair wages, safe working environments, and responsible operations.</p>
-              </div>
-              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
-                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
-              </div>
-            </div>
-
-            {/* Column 3 */}
-            <div className="flex flex-col space-y-6">
-              <div className="mb-4 border-b border-black/10 pb-4">
-                <h3 className="font-serif text-2xl font-bold text-primary mb-3">Quality, Security & Infrastructure</h3>
-                <p className="text-sm text-muted-foreground">Rigorous quality management and globally recognized supply chain security for frictionless importing.</p>
-              </div>
-              <div className="flex flex-col gap-6 items-center lg:items-start opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-300">
-                 <img src={certsImg} alt="Certifications" className="w-full object-contain" />
-              </div>
+            
+            <div className="order-1 lg:order-2">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Uncompromising Standards & Global Compliance</h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                We operate to the highest international standards for quality, ethical labor, and environmental sustainability. Our multi-country facilities are rigorously audited, ensuring your supply chain is secure, responsible, and ready for the world’s most demanding retail floors.
+              </p>
+              
+              <ul className="space-y-6">
+                <li className="flex gap-4">
+                  <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><circle cx="12" cy="12" r="4"/></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-serif text-xl font-bold text-foreground">Sustainable & Material Integrity</h4>
+                    <p className="mt-1 text-muted-foreground">Certified sourcing for organic, recycled, and eco-conscious apparel production.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-serif text-xl font-bold text-foreground">Ethical Labor & Social Compliance</h4>
+                    <p className="mt-1 text-muted-foreground">Strictly audited for fair wages, safe working environments, and responsible operations.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-serif text-xl font-bold text-foreground">Quality, Security & Infrastructure</h4>
+                    <p className="mt-1 text-muted-foreground">Rigorous quality management and globally recognized supply chain security for frictionless importing.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

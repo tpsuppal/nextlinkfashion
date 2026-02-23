@@ -15,8 +15,8 @@ export default function Footer() {
                 Next Link Fashion
               </span>
             </Link>
-            <p className="mt-4 text-sm text-primary-foreground/80 leading-relaxed">
-              Headquartered in Hong Kong, Next Link Fashion is a world-class leader in apparel manufacturing and global supply chain solutions with over 15 years of excellence.
+            <p className="mt-4 text-sm text-primary-foreground/80 leading-relaxed font-medium">
+              Headquartered in Hong Kong | Manufacturing across India, China, Bangladesh & Vietnam | GOTS | OEKO-TEX | BSCI | WRAP | ISO 14001 certified
             </p>
           </div>
           
