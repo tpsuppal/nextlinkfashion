@@ -44,24 +44,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section className="py-20 bg-secondary/20 border-b border-black/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-5xl">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">Globally Certified. Ethically Manufactured.</h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-4xl mx-auto">
-            We operate to the fashion industry's highest standards for sustainability, social compliance, and supply chain security. From GOTS-certified organic materials to C-TPAT-approved facilities, our multi-country manufacturing network ensures your garments are produced responsibly and clear customs without delay.
-          </p>
-          <div className="flex justify-center mb-10 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-500">
-             <img src={certsImg} alt="Certifications including GOTS, OEKO-TEX, BSCI, WRAP, C-TPAT" className="h-16 md:h-20 object-contain" />
-          </div>
-          <Link href="/about">
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white h-12 px-8 text-base font-semibold" data-testid="btn-view-certs">
-              View All Certifications
-            </Button>
-          </Link>
-        </div>
-      </section>
-
       {/* Global Footprint Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,6 +92,24 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-20 bg-secondary/20 border-b border-black/5">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-5xl">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">Globally Certified. Ethically Manufactured.</h2>
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-4xl mx-auto">
+            We operate to the fashion industry's highest standards for sustainability, social compliance, and supply chain security. From GOTS-certified organic materials to C-TPAT-approved facilities, our multi-country manufacturing network ensures your garments are produced responsibly and clear customs without delay.
+          </p>
+          <div className="flex justify-center mb-10 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-500">
+             <img src={certsImg} alt="Certifications including GOTS, OEKO-TEX, BSCI, WRAP, C-TPAT" className="h-16 md:h-20 object-contain" />
+          </div>
+          <Link href="/about">
+            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white h-12 px-8 text-base font-semibold" data-testid="btn-view-certs">
+              View All Certifications
+            </Button>
+          </Link>
         </div>
       </section>
 
