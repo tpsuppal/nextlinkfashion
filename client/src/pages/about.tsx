@@ -24,6 +24,12 @@ export default function About() {
       {/* Team Section */}
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 w-full">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6 text-center md:text-left">Our Integrated Team & Expertise</h2>
+            <p className="text-lg text-muted-foreground text-justify">
+              A cross-functional team built to reduce sampling cycles, protect quality, and keep production on schedule—end to end.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-accent/10 rounded-2xl transform -rotate-2"></div>
@@ -31,11 +37,6 @@ export default function About() {
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-8">Our Integrated Team & Expertise</h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                A cross-functional team built to reduce sampling cycles, protect quality, and keep production on schedule—end to end.
-              </p>
-              
               <ul className="space-y-6">
                 <li className="flex gap-4">
                   <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -73,13 +74,14 @@ export default function About() {
       {/* Quality Control Section */}
       <section className="py-24 bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 w-full">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Quality Control & Assurance</h2>
+            <p className="text-lg text-primary-foreground/90 text-justify">
+              Quality is the bedrock of Nextlink Fashion. Our robust Quality Management System (QMS) is meticulously implemented across the entire supply chain, ensuring consistent quality across bulk production.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Quality Control & Assurance</h2>
-              <p className="text-lg text-primary-foreground/90 mb-8">
-                Quality is the bedrock of Nextlink Fashion. Our robust Quality Management System (QMS) is meticulously implemented across the entire supply chain, ensuring consistent quality across bulk production.
-              </p>
-              
+            <div className="order-2 lg:order-1">
               <div className="space-y-4">
                 {[
                   "Pre-Production Checks: Rigorous inspection of raw materials, patterns, and samples.",
@@ -89,14 +91,14 @@ export default function About() {
                   "Accredited Lab Testing: Partnership with international testing labs."
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <svg className="w-6 h-6 text-accent mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinelinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg className="w-6 h-6 text-accent mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     <p className="text-primary-foreground/90">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
             
-            <div className="relative">
+            <div className="order-1 lg:order-2 relative">
               <img src={qcImg} alt="Quality Control Inspector" className="rounded-xl shadow-2xl w-full object-cover aspect-video border-4 border-white/10" />
             </div>
           </div>
@@ -106,17 +108,18 @@ export default function About() {
       {/* Sustainability Section */}
       <section className="py-24 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 w-full">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Sustainability & Environmental Responsibility</h2>
+            <p className="text-lg text-secondary-foreground/90 text-justify">
+              We are deeply committed to fostering a sustainable future for the apparel industry. Our environmental and social responsibility initiatives are integral to our operations.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <img src={sustainImg} alt="Sustainability" className="rounded-xl shadow-2xl w-full object-cover aspect-square md:aspect-video border-4 border-white/10" />
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Sustainability & Environmental Responsibility</h2>
-              <p className="text-lg text-secondary-foreground/90 mb-8">
-                We are deeply committed to fostering a sustainable future for the apparel industry. Our environmental and social responsibility initiatives are integral to our operations.
-              </p>
-              
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <li className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20">
                   <h4 className="font-serif text-xl font-bold mb-2">Ethical Sourcing</h4>
@@ -143,6 +146,12 @@ export default function About() {
       {/* Compliance & Certifications Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 w-full">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6 text-center md:text-left">Uncompromising Standards & Global Compliance</h2>
+            <p className="text-lg text-muted-foreground text-justify leading-relaxed">
+              We operate to the highest international standards for quality, ethical labor, and environmental sustainability. Our multi-country facilities are rigorously audited, ensuring your supply chain is secure, responsible, and ready for the world’s most demanding retail floors.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-accent/10 rounded-2xl transform rotate-2"></div>
@@ -150,11 +159,6 @@ export default function About() {
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Uncompromising Standards & Global Compliance</h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We operate to the highest international standards for quality, ethical labor, and environmental sustainability. Our multi-country facilities are rigorously audited, ensuring your supply chain is secure, responsible, and ready for the world’s most demanding retail floors.
-              </p>
-              
               <ul className="space-y-6">
                 <li className="flex gap-4">
                   <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
