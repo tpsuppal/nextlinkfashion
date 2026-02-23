@@ -103,7 +103,7 @@ export default function Home() {
             We operate to the fashion industry's highest standards for sustainability, social compliance, and supply chain security. From GOTS-certified organic materials to C-TPAT-approved facilities, our multi-country manufacturing network ensures your garments are produced responsibly and clear customs without delay.
           </p>
           <div className="flex justify-center mb-10 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-500">
-             <img src={certsImg} alt="Certifications including GOTS, OEKO-TEX, BSCI, WRAP, C-TPAT" className="h-24 md:h-32 object-contain" />
+             <img src={certsImg} alt="Certifications including GOTS, OEKO-TEX, BSCI, WRAP, C-TPAT" className="h-24 md:h-32 object-contain mix-blend-multiply" />
           </div>
           <Link href="/about">
             <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white h-12 px-8 text-base font-semibold" data-testid="btn-view-certs">

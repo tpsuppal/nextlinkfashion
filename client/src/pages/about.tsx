@@ -155,7 +155,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-accent/10 rounded-2xl transform rotate-2"></div>
-              <img src={certsImg} alt="Certifications" className="relative z-10 rounded-xl shadow-xl w-full object-cover aspect-video bg-white/50 backdrop-blur-sm p-4 grayscale hover:grayscale-0 transition-all duration-500 border border-black/5" />
+              <img src={certsImg} alt="Certifications" className="relative z-10 rounded-xl shadow-xl w-full object-cover aspect-video bg-white/50 backdrop-blur-sm p-4 grayscale hover:grayscale-0 transition-all duration-500 border border-black/5 mix-blend-multiply" />
             </div>
             
             <div className="order-1 lg:order-2">
