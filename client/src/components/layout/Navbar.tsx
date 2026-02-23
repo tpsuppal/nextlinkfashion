@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@assets/Screenshot_2026-02-23_at_7.30.41_PM_1771846243736.png";
+import logoImg from "@assets/NLFL_Logo-_Gold_1771820062366.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -18,9 +18,9 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md dark:bg-background/80">
-      <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Nextlink Fashion" className="h-20 w-20 object-contain mix-blend-multiply dark:mix-blend-normal dark:bg-white dark:rounded-xl" />
+          <img src={logoImg} alt="Nextlink Fashion" className="h-12 w-auto object-contain mix-blend-multiply dark:mix-blend-normal dark:bg-white dark:p-1 dark:rounded" />
           <span className="font-serif text-2xl font-bold tracking-tight text-accent">
             Next Link Fashion
           </span>
