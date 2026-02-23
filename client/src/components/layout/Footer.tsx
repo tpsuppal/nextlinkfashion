@@ -7,8 +7,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
-            <Link href="/" className="mb-6 inline-flex bg-white p-2 rounded-lg items-center justify-center">
-              <img src={logoImg} alt="Nextlink Fashion" className="h-12 w-auto object-contain" />
+            <Link href="/" className="mb-6 flex items-center gap-3">
+              <div className="bg-white p-2 rounded-lg inline-flex items-center justify-center">
+                <img src={logoImg} alt="Nextlink Fashion" className="h-10 w-auto object-contain" />
+              </div>
+              <span className="font-serif text-2xl font-bold tracking-tight text-accent">
+                Next Link Fashion
+              </span>
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/80 leading-relaxed">
               Headquartered in Hong Kong, Nextlink Fashion Inc Limited is a world-class leader in apparel manufacturing and global supply chain solutions with over 15 years of excellence.
