@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import { ZodError } from "zod";
+import { mockBlogPosts } from "./mock-blog-data";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -25,8 +26,8 @@ export async function registerRoutes(
 
   app.get("/api/blog", async (_req, res) => {
     try {
-      const posts = await storage.getBlogPosts();
-      res.json(posts);
+      const posts = mockBlogPosts;
+            res.json(posts);
     } catch (error) {
       console.error("Error fetching blog posts:", error);
       res.status(500).json({ message: "Failed to fetch blog posts" });
@@ -39,8 +40,8 @@ export async function registerRoutes(
       if (isNaN(id)) {
         return res.status(400).json({ message: "Invalid post ID" });
       }
-      const post = await storage.getBlogPost(id);
-      if (!post) {
+      const post = mockBlogPosts.find(p => p.id === id);
+            if (!post) {
         return res.status(404).json({ message: "Post not found" });
       }
       res.json(post);
