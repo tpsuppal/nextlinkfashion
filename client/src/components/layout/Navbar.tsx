@@ -39,9 +39,11 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button className="bg-primary text-white hover:bg-primary/90" data-testid="nav-contact-btn">
+          <Link to="/contact">
+            <Button className="bg-primary text-white hover:bg-primary/90" data-testid="nav-contact-btn">
             Partner With Us
           </Button>
+          </Link>
         </nav>
 
         {/* Mobile Nav Toggle */}
