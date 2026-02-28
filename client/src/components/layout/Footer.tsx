@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import logoImg from "@assets/image_1771847436240.png";
+
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="mb-6 flex items-center gap-3">
               <div className="inline-flex items-center justify-center">
-                <img src={logoImg} alt="Nextlink Fashion" className="h-16 w-16 object-contain" />
+                          <img src="/favicon.png" alt="Nextlink Fashion" className="h-16 w-16 object-contain" />
               </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-[#D4AF37]">
                 Next Link Fashion
