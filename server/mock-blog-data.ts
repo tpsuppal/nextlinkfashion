@@ -1,0 +1,58 @@
+import type { BlogPost } from "@shared/schema";
+
+export const mockBlogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "Sustainable Fashion: The Future of Apparel Manufacturing",
+    excerpt: "Explore how sustainable practices are reshaping the global apparel industry and what it means for manufacturers and brands.",
+    content: "The apparel manufacturing industry is undergoing a significant transformation as sustainability becomes a core focus. From organic cotton to recycled polyester, manufacturers are adopting eco-friendly materials and processes. GOTS and OEKO-TEX certifications are becoming industry standards, ensuring transparency and environmental responsibility throughout the supply chain.",
+    category: "Sustainability",
+    readTime: "5 min read",
+    publishedAt: new Date("2026-02-15"),
+  },
+  {
+    id: 2,
+    title: "Navigating Global Supply Chains in 2026",
+    excerpt: "Understanding the complexities of multi-country manufacturing and how to optimize your supply chain for efficiency and resilience.",
+    content: "With manufacturing facilities across India, China, Bangladesh, and Vietnam, managing a global supply chain requires strategic planning and robust logistics. Key factors include lead times, quality control, customs regulations, and building strong relationships with local partners. Diversification across multiple countries provides resilience against disruptions while optimizing costs.",
+    category: "Supply Chain",
+    readTime: "6 min read",
+    publishedAt: new Date("2026-02-10"),
+  },
+  {
+    id: 3,
+    title: "Quality Control Best Practices for Garment Manufacturing",
+    excerpt: "Learn the essential quality control measures that ensure your garments meet international standards and customer expectations.",
+    content: "Quality control is the backbone of successful garment manufacturing. Implementing rigorous inspection protocols at every stage—from fabric sourcing to final packaging—ensures consistency and reduces defects. Key practices include AQL sampling, inline inspections, pre-shipment audits, and maintaining detailed quality documentation. Investing in quality control saves costs in the long run and builds brand reputation.",
+    category: "Quality Control",
+    readTime: "7 min read",
+    publishedAt: new Date("2026-02-05"),
+  },
+  {
+    id: 4,
+    title: "The Rise of Technical Fabrics in Performance Wear",
+    excerpt: "Discover how advanced textile technologies are creating new possibilities in sportswear and activewear manufacturing.",
+    content: "Technical fabrics are revolutionizing the activewear industry. Moisture-wicking, anti-microbial, UV-protection, and four-way stretch technologies are becoming standard features. Manufacturers are investing in advanced knitting and finishing technologies to meet the growing demand for high-performance apparel. Understanding fabric properties and testing methods is crucial for brands entering the performance wear market.",
+    category: "Innovation",
+    readTime: "6 min read",
+    publishedAt: new Date("2026-01-28"),
+  },
+  {
+    id: 5,
+    title: "From Design to Delivery: The Complete Garment Production Cycle",
+    excerpt: "A comprehensive guide to understanding each stage of the garment manufacturing process and typical timelines.",
+    content: "The journey from concept to finished garment involves multiple stages: design development, tech pack creation, fabric sourcing, sample production, bulk manufacturing, quality inspection, and logistics. Understanding lead times for each stage helps brands plan their collections effectively. Typical production cycles range from 60-120 days depending on complexity, order size, and factory capacity.",
+    category: "Manufacturing Process",
+    readTime: "8 min read",
+    publishedAt: new Date("2026-01-20"),
+  },
+  {
+    id: 6,
+    title: "Choosing the Right Manufacturing Partner for Your Brand",
+    excerpt: "Key factors to consider when selecting an apparel manufacturer, from MOQs to certifications and communication.",
+    content: "Selecting the right manufacturing partner is critical for brand success. Essential factors include: production capacity, minimum order quantities (MOQs), quality certifications, ethical compliance, communication efficiency, and design capabilities. Visit factories when possible, request samples, check references, and start with smaller orders to test the partnership before scaling up.",
+    category: "Business Strategy",
+    readTime: "5 min read",
+    publishedAt: new Date("2026-01-15"),
+  },
+];
