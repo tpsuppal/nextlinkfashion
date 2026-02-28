@@ -2,7 +2,6 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@assets/image_1771847436240.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md dark:bg-background/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Nextlink Fashion" className="h-14 w-auto object-contain" style={{filter: "sepia(100%) saturate(250%) hue-rotate(330deg) brightness(1.1)"}} />
+          <img src="/favicon.png" alt="Nextlink Fashion" className="h-14 w-auto object-contain" />
           <span className="font-serif text-2xl font-bold tracking-tight text-[#D4AF37]">
             Next Link Fashion
           </span>
@@ -40,32 +39,31 @@ export default function Navbar() {
             </Link>
           ))}
           <Link to="/contact">
-            <Button className="bg-primary text-white hover:bg-primary/90" data-testid="nav-contact-btn">
-            Partner With Us
-          </Button>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Partner With Us
+            </Button>
           </Link>
         </nav>
 
-        {/* Mobile Nav Toggle */}
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
-          data-testid="mobile-menu-toggle"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
+      {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden border-b bg-background px-4 py-4">
-          <nav className="flex flex-col gap-4">
+        <div className="md:hidden border-t border-white/10 bg-white/95 backdrop-blur-md">
+          <nav className="container mx-auto flex flex-col gap-4 px-4 py-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-lg font-medium transition-colors hover:text-accent ${
+                className={`text-sm font-medium transition-colors hover:text-accent ${
                   location === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
                 onClick={() => setIsOpen(false)}
@@ -73,9 +71,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button className="mt-2 w-full bg-primary" data-testid="mobile-nav-contact-btn">
-              Partner With Us
-            </Button>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                Partner With Us
+              </Button>
+            </Link>
           </nav>
         </div>
       )}
