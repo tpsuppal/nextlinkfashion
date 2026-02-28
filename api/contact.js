@@ -16,12 +16,23 @@ export default async function handler(req, res) {
     // Access key is linked to nextlink@nextlinkhk.com
     // On first submission, a verification email will be sent to nextlink@nextlinkhk.com
     // Simply click the confirmation link once to activate
+
+        // Check if Web3Forms is configured
+        const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+        if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+                // Web3Forms not configured - return success without sending email
+                console.log('Contact form submission (Web3Forms not configured):', { firstName, lastName, email });
+                return res.status(201).json({
+                          message: 'Thank you for your inquiry. We will get back to you within 24-48 hours.',
+                          success: true,
+                        });
+              }
+    
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE',
-        subject: `New Inquiry from ${firstName} ${lastName} - ${company}`,
+        access_key: accessKey,        subject: `New Inquiry from ${firstName} ${lastName} - ${company}`,
         from_name: `${firstName} ${lastName}`,
         email: email,
         name: `${firstName} ${lastName}`,
