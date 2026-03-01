@@ -22,7 +22,6 @@ export default function Blog() {
           </p>
         </div>
       </section>
-
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           {isLoading ? (
@@ -43,20 +42,20 @@ export default function Blog() {
                   <div className="p-8 flex flex-col h-full">
                     <div className="flex items-center gap-4 mb-4 text-sm">
                       <span className="text-accent font-semibold">{post.category}</span>
-                      <span className="text-muted-foreground">&bull;</span>
+                      <span className="text-muted-foreground">•</span>
                       <span className="text-muted-foreground">
                         {new Date(post.publishedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
                       </span>
                     </div>
                     <h2 className="font-serif text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                      <Link href="#">{post.title}</Link>
+                      <Link href={`/blog/${post.id}`}>{post.title}</Link>
                     </h2>
                     <p className="text-muted-foreground leading-relaxed mb-8 flex-1">
                       {post.excerpt}
                     </p>
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-black/5">
                       <span className="text-sm font-medium text-foreground">{post.readTime}</span>
-                      <Link href="#" className="text-primary font-semibold hover:text-accent transition-colors flex items-center gap-1">
+                      <Link href={`/blog/${post.id}`} className="text-primary font-semibold hover:text-accent transition-colors flex items-center gap-1">
                         Read Article <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                       </Link>
                     </div>
