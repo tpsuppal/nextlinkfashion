@@ -140,32 +140,32 @@ export default function Home() {
 
           <div className="max-w-4xl mx-auto space-y-4 text-left">
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">What are your minimum order quantities (MOQ)?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">What are your minimum order quantities (MOQ)?</summary>
               <p className="mt-4 text-muted-foreground">Our MOQ typically starts at 500 pieces per style per color. For initial orders or sampling, we can discuss flexible arrangements to accommodate your business needs.</p>
             </details>
 
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">What is your typical production lead time?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">What is your typical production lead time?</summary>
               <p className="mt-4 text-muted-foreground">Standard production lead time is 60-90 days from order confirmation, depending on order complexity and quantity. Rush orders can be accommodated with advance notice.</p>
             </details>
 
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">Do you offer sample development services?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">Do you offer sample development services?</summary>
               <p className="mt-4 text-muted-foreground">Yes, we provide comprehensive sample development services including tech packs, first samples, fit samples, and pre-production samples. Turnaround time for samples is typically 2-3 weeks.</p>
             </details>
 
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">Which certifications do your facilities hold?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">Which certifications do your facilities hold?</summary>
               <p className="mt-4 text-muted-foreground">Our multi-country facilities are certified to GOTS (organic materials), OEKO-TEX Standard 100 (textile safety), BSCI (social compliance), WRAP (ethical manufacturing), and ISO 14001 (environmental management).</p>
             </details>
 
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">Can you handle custom designs and private label production?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">Can you handle custom designs and private label production?</summary>
               <p className="mt-4 text-muted-foreground">Absolutely. Our in-house design team works closely with brands to develop custom collections, from concept sketches to final production. We offer full private label services including hang tags, packaging, and branding.</p>
             </details>
 
             <details className="bg-card p-6 rounded-lg border border-border">
-              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors">What payment terms do you offer?</summary>
+              <summary className="font-semibold text-lg cursor-pointer hover:text-accent transition-colors text-foreground">What payment terms do you offer?</summary>
               <p className="mt-4 text-muted-foreground">Standard payment terms are 30% deposit upon order confirmation and 70% balance before shipment. For established clients, we can discuss extended payment terms such as LC (Letter of Credit) or open account arrangements.</p>
             </details>
           </div>
