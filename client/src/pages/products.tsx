@@ -16,7 +16,7 @@ export default function Products() {
     {
       id: "mens",
       title: "Men's Garments",
-      description: "Nextlink Fashion offers a comprehensive collection of men's apparel, including shirts, trousers, jeans, t-shirts, polos, and jackets. We focus on combining classic elegance with modern comfort, utilizing premium fabrics and precision tailoring to produce garments that stand the test of time.",
+      description: "Next Link Fashion offers a comprehensive collection of men's apparel, including shirts, trousers, jeans, t-shirts, polos, and jackets. We focus on combining classic elegance with modern comfort, utilizing premium fabrics and precision tailoring to produce garments that stand the test of time.",
       image: mensImg,
       align: "left"
     },
