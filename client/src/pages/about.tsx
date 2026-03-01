@@ -77,7 +77,7 @@ export default function About() {
           <div className="mb-16 w-full">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">Quality Control & Assurance</h2>
             <p className="text-lg text-primary-foreground/90 text-justify">
-              Quality is the bedrock of Nextlink Fashion. Backed by GMP (Good Manufacturing Practice) and ISO 14001 certifications, our robust Quality Management System (QMS) is meticulously implemented across our multi-country facilities to ensure consistent, retail-ready garments.
+              Quality is the bedrock of Next Link Fashion. Backed by GMP (Good Manufacturing Practice) and ISO 14001 certifications, our robust Quality Management System (QMS) is meticulously implemented across our multi-country facilities to ensure consistent, retail-ready garments.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
