@@ -119,7 +119,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-secondary/30 blur-3xl opacity-50"></div>
         
         <div className="container relative z-10 mx-auto px-4 text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Elevate your brand with a global partner</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">Elevate your brand with a global partner</h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
             Committed to quality, efficiency, and sustainability. Contact Next Link Fashion today to explore how our design-to-delivery expertise can meet your apparel sourcing needs.
           </p>
@@ -133,7 +133,7 @@ export default function Home() {
               {/* FAQ Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-foreground">Frequently Asked Questions</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             Common questions from B2B buyers about working with Next Link Fashion.
           </p>
