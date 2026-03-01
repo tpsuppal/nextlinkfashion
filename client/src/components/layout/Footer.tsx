@@ -60,8 +60,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Next Link Fashion. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs text-primary-foreground/60">
-            <span className="hover:text-white cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-white cursor-pointer">Terms of Service</span>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
