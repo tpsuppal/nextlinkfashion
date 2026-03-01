@@ -51,7 +51,7 @@ export default function Home() {
             <div>
               <h2 className="font-serif text-4xl font-bold text-foreground mb-6">Our Global Footprint & Geographical Advantage</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Headquartered in the dynamic hub of Hong Kong, Nextlink Fashion strategically leverages an expansive network of state-of-the-art production facilities across <strong className="text-primary font-semibold">India, China, Bangladesh, and Vietnam</strong>.
+                Headquartered in the dynamic hub of Hong Kong, Next Link Fashion strategically leverages an expansive network of state-of-the-art production facilities across <strong className="text-primary font-semibold">India, China, Bangladesh, and Vietnam</strong>.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="container relative z-10 mx-auto px-4 text-center">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Elevate your brand with a global partner</h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-            Committed to quality, efficiency, and sustainability. Contact Nextlink Fashion today to explore how our design-to-delivery expertise can meet your apparel sourcing needs.
+            Committed to quality, efficiency, and sustainability. Contact Next Link Fashion today to explore how our design-to-delivery expertise can meet your apparel sourcing needs.
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 h-14 px-8 text-lg font-semibold" data-testid="btn-cta-bottom">
