@@ -12,7 +12,7 @@ import About from "@/pages/about";
 import Products from "@/pages/products";
 import Contact from "@/pages/contact";
 import Blog from "@/pages/blog";
-import BlogPost from "@/pages/blog-post";
+import BlogPost from "@/pages/blog-post"; import PrivacyPolicy from "@/pages/privacy-policy"; import TermsOfService from "@/pages/terms-of-service";
 
 function Router() {
   return (
@@ -25,7 +25,7 @@ function Router() {
           <Route path="/products" component={Products} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
-          <Route path="/blog/:id" component={BlogPost} />
+          <Route path="/blog/:id" component={BlogPost} />           <Route path="/privacy-policy" component={PrivacyPolicy} />           <Route path="/terms-of-service" component={TermsOfService} />
           <Route component={NotFound} />
         </Switch>
       </main>
