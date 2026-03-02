@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/design-development", label: "Design & Dev" },
   { href: "/capabilities", label: "Capabilities" },
       { href: "/quality-compliance", label: "Quality & Compliance" },
+      { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
