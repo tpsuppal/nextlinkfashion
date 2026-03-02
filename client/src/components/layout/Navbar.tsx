@@ -6,10 +6,12 @@ import logoImg from "@assets/image_1771847436240.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
+    { href: "/capabilities", label: "Capabilities" },
+
   { href: "/design-development", label: "Design & Dev" },
-  { href: "/capabilities", label: "Capabilities" },
       { href: "/quality-compliance", label: "Quality & Compliance" },
+      { href: "/about", label: "About Us" },
+
       { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
