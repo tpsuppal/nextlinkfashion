@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Search, PenTool, Scissors, Layers, CheckCircle, Share2, Palette } from "lucide-react";
+import { PenTool, Scissors, Layers, CheckCircle, Share2, Palette } from "lucide-react";
+import heroMfgImg from "@/assets/images/hero-manufacturing.jpg";
 
 const services = [
   {
@@ -42,21 +43,31 @@ export default function DesignDevelopment() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative py-24 bg-primary text-primary-foreground overflow-hidden">
+      <section className="relative py-32 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={heroMfgImg}
+            alt="Design Studio"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold font-serif mb-6">
-            Design Studio – From Concept to Sample in Weeks
+          <span className="mb-6 inline-block rounded-full bg-accent/20 px-4 py-1.5 text-sm font-medium text-accent border border-accent/30">
+            In-House Design Studio
+          </span>
+          <h1 className="text-4xl md:text-6xl font-bold font-serif mb-6 text-white">
+            Design Studio &ndash; From Concept to Sample in Weeks
           </h1>
-          <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto mb-10">
-            Next Link Fashion is not just a sewing facility—we are your strategic fashion design and product development partner. Our in-house team accelerates your journey from idea to shelf.
+          <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto mb-10 text-white/90">
+            Next Link Fashion is not just a sewing facility&mdash;we are your strategic fashion design and product development partner. Our in-house team accelerates your journey from idea to shelf.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 h-14 px-10 text-base font-semibold">
               Book a Design Consultation
             </Button>
           </Link>
         </div>
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000')] bg-cover bg-center" />
       </section>
 
       {/* Services Section */}
@@ -70,10 +81,10 @@ export default function DesignDevelopment() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
-              <div key={i} className="p-8 rounded-2xl border border-border bg-card hover:shadow-lg transition-all group">
-                <service.icon className="w-12 h-12 text-accent mb-6 group-hover:scale-110 transition-transform" />
+              <div key={i} className="p-8 rounded-2xl border border-border bg-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                <service.icon className="w-12 h-12 text-accent mb-6 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -89,15 +100,15 @@ export default function DesignDevelopment() {
               A transparent, efficient process designed to get your samples ready for market in record time.
             </p>
           </div>
-          <div className="max-w-5xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4">
             {processSteps.map((item, i) => (
-              <div key={i} className="flex flex-col md:flex-row items-center gap-6 p-6 rounded-xl bg-background border border-border shadow-sm">
-                <div className="text-3xl font-bold text-accent font-serif">{item.step}</div>
+              <div key={i} className="flex flex-col md:flex-row items-center gap-6 p-6 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-4xl font-bold text-accent font-serif min-w-[60px] text-center">{item.step}</div>
                 <div className="flex-1 text-center md:text-left">
                   <h4 className="text-xl font-bold mb-1">{item.title}</h4>
                   <p className="text-muted-foreground">{item.detail}</p>
                 </div>
-                <div className="px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold whitespace-nowrap">
+                <div className="px-5 py-2 rounded-full bg-accent/10 text-accent font-semibold whitespace-nowrap text-sm border border-accent/20">
                   {item.timeline}
                 </div>
               </div>
@@ -106,21 +117,29 @@ export default function DesignDevelopment() {
         </div>
       </section>
 
-      {/* Visual Proof Section */}
+      {/* Visual Section - using local asset */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-12">Bringing Visions to Life</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4">Bringing Visions to Life</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-12">
+            From initial concept sketches to production-ready garments—our design studio is where collections are born.
+          </p>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-video relative group">
-              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000" alt="Design Session" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-white font-bold text-xl">Collaborative Design Sessions</span>
+              <img
+                src={heroMfgImg}
+                alt="Collaborative Design Sessions"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                <span className="text-white font-bold text-lg">Collaborative Design Sessions</span>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl aspect-video relative group">
-              <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1000" alt="Sample Fitting" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-white font-bold text-xl">Precision Fit Testing</span>
+            <div className="rounded-2xl overflow-hidden shadow-xl aspect-video relative group bg-muted flex items-center justify-center">
+              <div className="p-10 text-center">
+                <Scissors className="w-16 h-16 text-accent mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-2">Precision Fit Testing</h3>
+                <p className="text-muted-foreground">Every prototype undergoes rigorous fit sessions before moving to production.</p>
               </div>
             </div>
           </div>
@@ -130,7 +149,7 @@ export default function DesignDevelopment() {
       {/* CTA Section */}
       <section className="py-24 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
-          <Share2 className="w-16 h-16 mx-auto mb-8 animate-bounce" />
+          <Share2 className="w-14 h-14 mx-auto mb-8 opacity-80" />
           <h2 className="text-4xl font-bold font-serif mb-6">Ready to start your next collection?</h2>
           <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
             Share your concept deck or tech packs with us, and let's create something extraordinary together.
