@@ -17,6 +17,7 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import DesignDevelopment from "@/pages/design-development";
 import Capabilities from "@/pages/capabilities";
+import QualityCompliance from "@/pages/quality-compliance";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
           <Route path="/about" component={About} />
           <Route path="/design-development" component={DesignDevelopment} />
           <Route path="/capabilities" component={Capabilities} />
+                        <Route path="/quality-compliance" component={QualityCompliance} />
           <Route path="/products" component={Products} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
