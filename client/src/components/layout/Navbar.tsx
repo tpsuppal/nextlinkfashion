@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/design-development", label: "Design & Dev" },
+  { href: "/capabilities", label: "Capabilities" },
   { href: "/products", label: "Products" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
@@ -21,7 +22,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-white/80 backdrop-blur-md dark:bg-background/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-                  <img src={logoImg} alt="Next Link Fashion" className="h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Next Link Fashion" className="h-14 w-auto object-contain" />
           <span className="font-serif text-2xl font-bold tracking-tight text-[#D4AF37]">
             Next Link Fashion
           </span>
