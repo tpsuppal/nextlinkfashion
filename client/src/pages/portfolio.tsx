@@ -17,8 +17,7 @@ export default function Portfolio() {
       title: "Women's Summer Dresses",
       description: 'Viscose prints, flowy silhouettes',
       moq: 'MOQ 500/color',
-      image: 'women-dresses'
-    },
+    image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&h=1000&fit=crop'    },
     {
       id: 2,
       category: 'Womenswear',
@@ -26,8 +25,7 @@ export default function Portfolio() {
       title: "Women's Outerwear",
       description: 'Tailored coats, wool blends',
       moq: 'MOQ 300/style',
-      image: 'women-coats'
-    },
+    image: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1000&fit=crop'    },
     {
       id: 3,
       category: 'Womenswear',
@@ -35,8 +33,7 @@ export default function Portfolio() {
       title: "Women's Tops & Blouses",
       description: 'Silk blends, modern cuts',
       moq: 'MOQ 600/color',
-      image: 'women-tops'
-    },
+    image: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&h=1000&fit=crop'    },
     {
       id: 4,
       category: 'Menswear',
@@ -44,8 +41,7 @@ export default function Portfolio() {
       title: "Men's Shirts",
       description: 'Cotton and linen weaves, classic & slim fit',
       moq: 'MOQ 500/color',
-      image: 'men-shirts'
-    },
+    image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=1000&fit=crop'    },
     {
       id: 5,
       category: 'Menswear',
@@ -53,8 +49,7 @@ export default function Portfolio() {
       title: "Men's Outerwear",
       description: 'Jackets, parkas, technical fabrics',
       moq: 'MOQ 400/style',
-      image: 'men-jackets'
-    },
+    image: 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&h=1000&fit=crop'    },
     {
       id: 6,
       category: 'Menswear',
@@ -62,8 +57,7 @@ export default function Portfolio() {
       title: "Men's Denim",
       description: 'Stretch denim, multiple washes',
       moq: 'MOQ 600/wash',
-      image: 'men-denim'
-    },
+    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&h=1000&fit=crop'    },
     {
       id: 7,
       category: 'Kidswear',
@@ -71,8 +65,7 @@ export default function Portfolio() {
       title: "Kids' Playwear",
       description: 'Durable cotton knits, fun prints',
       moq: 'MOQ 400/color',
-      image: 'kids-play'
-    },
+    image: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800&h=1000&fit=crop'    },
     {
       id: 8,
       category: 'Kidswear',
@@ -80,8 +73,7 @@ export default function Portfolio() {
       title: "Kids' Outerwear",
       description: 'Puffer jackets, fleece-lined',
       moq: 'MOQ 350/style',
-      image: 'kids-coats'
-    },
+    image: 'https://images.unsplash.com/photo-1519238378529-216ab5c61342?w=800&h=1000&fit=crop'    },
     {
       id: 9,
       category: 'Athleisure',
@@ -89,8 +81,7 @@ export default function Portfolio() {
       title: 'Performance Leggings',
       description: 'Moisture-wicking, 4-way stretch',
       moq: 'MOQ 500/color',
-      image: 'athleisure-leggings'
-    },
+    image: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&h=1000&fit=crop'    },
     {
       id: 10,
       category: 'Athleisure',
@@ -98,8 +89,7 @@ export default function Portfolio() {
       title: 'Sports Tops & Hoodies',
       description: 'Technical fabrics, quick-dry',
       moq: 'MOQ 400/color',
-      image: 'athleisure-tops'
-    },
+    image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=1000&fit=crop'    },
     {
       id: 11,
       category: 'Athleisure',
@@ -107,8 +97,7 @@ export default function Portfolio() {
       title: 'Activewear Sets',
       description: 'Seamless knits, matching sets',
       moq: 'MOQ 450/set',
-      image: 'athleisure-sets'
-    },
+    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=1000&fit=crop'    },
     {
       id: 12,
       category: 'Womenswear',
@@ -116,8 +105,7 @@ export default function Portfolio() {
       title: "Women's Knitwear",
       description: 'Sweaters, cardigans, fine gauge',
       moq: 'MOQ 400/color',
-      image: 'women-knits'
-    }
+    image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=1000&fit=crop'    }
   ];
 
   const filteredItems = portfolioItems.filter(item => {
