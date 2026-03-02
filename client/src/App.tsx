@@ -16,6 +16,7 @@ import BlogPost from "@/pages/blog-post";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import DesignDevelopment from "@/pages/design-development";
+import Capabilities from "@/pages/capabilities";
 
 function Router() {
   return (
@@ -25,13 +26,14 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/design-development" component={DesignDevelopment} />
+          <Route path="/capabilities" component={Capabilities} />
           <Route path="/products" component={Products} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/blog/:id" component={BlogPost} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/terms-of-service" component={TermsOfService} />
-          <Route path="/design-development" component={DesignDevelopment} />
           <Route component={NotFound} />
         </Switch>
       </main>
