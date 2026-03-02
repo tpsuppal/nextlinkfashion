@@ -9,7 +9,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/home";
 import About from "@/pages/about";
-import Products from "@/pages/products";
 import Contact from "@/pages/contact";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
@@ -30,7 +29,6 @@ function Router() {
           <Route path="/design-development" component={DesignDevelopment} />
           <Route path="/capabilities" component={Capabilities} />
                         <Route path="/quality-compliance" component={QualityCompliance} />
-          <Route path="/products" component={Products} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/blog/:id" component={BlogPost} />
