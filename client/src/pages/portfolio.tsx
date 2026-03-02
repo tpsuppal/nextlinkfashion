@@ -186,12 +186,8 @@ export default function Portfolio() {
             {filteredItems.map((item) => (
               <div key={item.id} className="group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 {/* Image Placeholder */}
-                <div className="relative h-80 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="text-6xl mb-4">👗</div>
+                <img src={item.image} alt={item.title} className="w-full h-64 object-cover" />
                       <p className="text-gray-600 font-medium">{item.title}</p>
-                      <p className="text-sm text-gray-500 mt-2">Professional photography available</p>
                     </div>
                   </div>
                   {/* Category Badge */}
