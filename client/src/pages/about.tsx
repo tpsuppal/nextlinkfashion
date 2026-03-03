@@ -9,12 +9,12 @@ export default function About() {
   return (
     <div className="flex flex-col w-full pb-20">
       {/* Page Header */}
-      <section className="bg-accent/10 py-20 px-4 text-center">
+                <section className="bg-primary py-24 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">About Next Link Fashion</span>
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
+                        <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6">
                 15+ Years Crafting Success for Fashion Retailers Worldwide          </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+                        <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
                 Next Link Fashion, headquartered in Hong Kong, is your dedicated partner in apparel manufacturing. With production facilities across India, China, Bangladesh, and Vietnam, we specialize in turning fashion brands' visions into high-quality, market-ready garments. Serving retailers and brands in the USA, Europe, and Asia, we deliver complete design-to-delivery solutions backed by full compliance with global retail standards.          </p>
         </div>
       </section>
