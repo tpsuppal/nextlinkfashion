@@ -9,7 +9,7 @@ const productCategories = [
     description: "Dresses, tops, blouses, skirts, trousers, jackets, activewear",
     moq: "300-500 pcs/color",
     leadTime: "6-8 weeks",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&auto=format",
+        image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop&auto=format",
   },
   {
     title: "Men's Apparel",
@@ -17,7 +17,7 @@ const productCategories = [
     description: "Shirts, t-shirts, polos, trousers, jeans, jackets, hoodies",
     moq: "400-600 pcs/color",
     leadTime: "6-8 weeks",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&auto=format",
+        image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=400&fit=crop&auto=format",
   },
   {
     title: "Children's Wear",
@@ -25,7 +25,7 @@ const productCategories = [
     description: "Infants, toddlers, juniors - full range of kids' clothing",
     moq: "400-500 pcs/color",
     leadTime: "6-8 weeks",
-    image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?w=600&h=400&fit=crop&auto=format",
+        image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&h=400&fit=crop&auto=format",
   },
 ];
 
