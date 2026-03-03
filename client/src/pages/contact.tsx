@@ -5,6 +5,14 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
+
+const productionFacilities = [
+  { country: "India" },
+  { country: "China" },
+  { country: "Bangladesh" },
+  { country: "Vietnam" },
+];
+
 export default function Contact() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -15,6 +23,7 @@ export default function Contact() {
     interest: "",
     message: "",
   });
+
   const mutation = useMutation({
     mutationFn: async (data: typeof formData) => {
       const res = await fetch("/api/contact", {
@@ -43,50 +52,68 @@ export default function Contact() {
       });
     },
   });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     mutation.mutate(formData);
   };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
+
   return (
-    <div className="flex flex-col w-full min-h-screen">
-      <section className="bg-accent/10 py-20 px-4 text-center">
+    <div className="flex flex-col w-full">
+      {/* Hero Section */}
+      <section className="bg-primary py-24 px-4 text-center">
         <div className="container mx-auto max-w-4xl">
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">Partner With Us</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <span className="inline-block bg-accent/20 text-accent font-semibold text-sm px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+            Get In Touch
+          </span>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-6">
+            Partner With Us
+          </h1>
+          <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
             Ready to elevate your brand with a global manufacturing partner? Reach out to our team in Hong Kong today.
           </p>
         </div>
       </section>
-      <section className="py-20 flex-1">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-3 bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-black/5">
+
+      {/* Contact Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            {/* Form */}
+            <div className="lg:col-span-3">
               <h2 className="font-serif text-2xl font-bold text-foreground mb-8">Send Us a Message</h2>
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" value={formData.firstName} onChange={handleChange} required />
+                    <Input id="firstName" placeholder="John" value={formData.firstName} onChange={handleChange} required className="mt-1" />
                   </div>
-                  <div className="space-y-2">
+                  <div>
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" value={formData.lastName} onChange={handleChange} required />
+                    <Input id="lastName" placeholder="Doe" value={formData.lastName} onChange={handleChange} required className="mt-1" />
                   </div>
                 </div>
-                <div className="space-y-2">
+                <div>
                   <Label htmlFor="company">Company Name</Label>
-                  <Input id="company" placeholder="Your Brand Ltd." value={formData.company} onChange={handleChange} required />
+                  <Input id="company" placeholder="Your Brand Ltd." value={formData.company} onChange={handleChange} required className="mt-1" />
                 </div>
-                <div className="space-y-2">
+                <div>
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" value={formData.email} onChange={handleChange} required />
+                  <Input id="email" type="email" placeholder="john@example.com" value={formData.email} onChange={handleChange} required className="mt-1" />
                 </div>
-                <div className="space-y-2">
+                <div>
                   <Label htmlFor="interest">Primary Interest</Label>
-                  <select id="interest" value={formData.interest} onChange={handleChange} required className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm">
+                  <select
+                    id="interest"
+                    value={formData.interest}
+                    onChange={handleChange}
+                    required
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm mt-1"
+                  >
                     <option value="">Select a category...</option>
                     <option value="ladies">Ladies' Garments</option>
                     <option value="mens">Men's Garments</option>
@@ -94,15 +121,25 @@ export default function Contact() {
                     <option value="general">General Inquiry</option>
                   </select>
                 </div>
-                <div className="space-y-2">
+                <div>
                   <Label htmlFor="message">Message Details</Label>
-                  <Textarea id="message" placeholder="Tell us about your production needs, volume, and timelines..." rows={5} value={formData.message} onChange={handleChange} required />
+                  <Textarea
+                    id="message"
+                    placeholder="Tell us about your production needs, volume, and timelines..."
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="mt-1"
+                  />
                 </div>
                 <Button type="submit" disabled={mutation.isPending} className="w-full bg-primary text-white h-12 text-lg hover:bg-primary/90">
                   {mutation.isPending ? "Submitting..." : "Submit Inquiry"}
                 </Button>
               </form>
             </div>
+
+            {/* Contact Info */}
             <div className="lg:col-span-2 space-y-8">
               <div className="bg-primary text-primary-foreground p-8 rounded-2xl shadow-lg">
                 <h3 className="font-serif text-2xl font-bold mb-6 text-accent">Global Headquarters</h3>
@@ -137,14 +174,17 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-2xl border border-black/5">
-                <h3 className="font-serif text-xl font-bold text-foreground mb-4">Production Facilities</h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-accent"></div> India Factory Hub</li>
-                  <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-accent"></div> China Manufacturing Center</li>
-                  <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-accent"></div> Bangladesh Production Base</li>
-                  <li className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-accent"></div> Vietnam Garment Works</li>
-                </ul>
+
+              {/* Production Facilities - Gold background, country names only */}
+              <div className="bg-accent p-8 rounded-2xl shadow-lg">
+                <h3 className="font-serif text-xl font-bold text-primary mb-6">Production Facilities</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {productionFacilities.map((facility, i) => (
+                    <div key={i} className="bg-primary text-white rounded-xl px-4 py-3 text-center font-semibold text-sm tracking-wide">
+                      {facility.country}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
