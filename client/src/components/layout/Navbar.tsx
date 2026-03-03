@@ -6,13 +6,10 @@ import logoImg from "@assets/image_1771847436240.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
-    { href: "/capabilities", label: "Capabilities" },
-
+  { href: "/about", label: "About Us" },
+  { href: "/capabilities", label: "Capabilities" },
   { href: "/design-development", label: "Design & Dev" },
-      { href: "/quality-compliance", label: "Quality & Compliance" },
-      { href: "/about", label: "About Us" },
-
-      { href: "/portfolio", label: "Portfolio" },
+  { href: "/quality-compliance", label: "Quality & Compliance" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -53,36 +50,32 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="md:hidden p-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-background">
-          <nav className="container mx-auto flex flex-col gap-1 px-4 py-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`py-2 text-sm font-medium transition-colors hover:text-accent ${
-                  location === link.href ? "text-primary" : "text-muted-foreground"
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link href="/contact" onClick={() => setIsOpen(false)}>
-              <Button className="mt-2 w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                Partner With Us
-              </Button>
+        <div className="md:hidden bg-white border-t border-black/5 px-4 py-4 flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-muted-foreground hover:text-accent"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
             </Link>
-          </nav>
+          ))}
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            <Button className="bg-primary text-primary-foreground w-full">
+              Partner With Us
+            </Button>
+          </Link>
         </div>
       )}
     </header>
