@@ -1,10 +1,10 @@
 import React from 'react';
-import { Switch, Route, useLocation } from "wouter";import { queryClient } from "./lib/queryClient";
+import { Switch, Route, useLocation } from "wouter";
+import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/home";
@@ -17,16 +17,17 @@ import TermsOfService from "@/pages/terms-of-service";
 import DesignDevelopment from "@/pages/design-development";
 import Capabilities from "@/pages/capabilities";
 import QualityCompliance from "@/pages/quality-compliance";
-import Portfolio from "@/pages/portfolio";
 
-// Scroll to top component
+// Scroll to top component - scrolls both window and document element
 function ScrollToTop() {
   const [location] = useLocation();
-  
+
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   }, [location]);
-  
+
   return null;
 }
 
@@ -34,15 +35,14 @@ function Router() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Navbar />
+      <ScrollToTop />
       <main className="flex-1">
-                <ScrollToTop />
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/design-development" component={DesignDevelopment} />
           <Route path="/capabilities" component={Capabilities} />
-                        <Route path="/quality-compliance" component={QualityCompliance} />
-                        <Route path="/portfolio" component={Portfolio} />
+          <Route path="/quality-compliance" component={QualityCompliance} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/blog/:id" component={BlogPost} />
