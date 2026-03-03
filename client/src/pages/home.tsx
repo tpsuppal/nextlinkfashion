@@ -35,7 +35,7 @@ export default function Home() {
                 Partner With Us
               </Button>
             </Link>
-            <Link href="/products">
+                          <Link href="/capabilities">
               <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-sm min-w-[200px] h-14 text-base font-semibold">
                 View Capabilities
               </Button>
